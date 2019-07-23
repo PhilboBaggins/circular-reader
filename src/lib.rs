@@ -1,12 +1,12 @@
 #[allow(dead_code)]
-struct CircularReader {
+pub struct CircularReader {
     pos: usize,
     buf: Vec<usize>,
 }
 
 impl CircularReader {
     #[allow(dead_code)]
-    fn new(buf: Vec<usize>) -> CircularReader {
+    pub fn new(buf: Vec<usize>) -> CircularReader {
         CircularReader { pos: 0, buf: buf }
     }
 }
