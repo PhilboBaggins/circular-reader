@@ -30,7 +30,7 @@ mod tests {
 
     #[test]
     fn it_works() {
-        let buf = vec!(1, 2, 3);
+        let buf = vec![1, 2, 3];
         let mut cr = CircularReader::new(buf);
         assert_eq!(cr.next(), Some(1));
         assert_eq!(cr.next(), Some(2));
